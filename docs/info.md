@@ -13,7 +13,7 @@ The CPU has a few important parts:
 
 Accumulator (acc) – This is like a temporary storage space where the CPU keeps results of calculations. It holds values that the CPU works with.
 
-Program Counter (pc) – This keeps track of what instruction the CPU is working on right now, like a bookmark that tells the CPU which part of its instruction list to read next.
+Program Counter (pc) – This keeps track of what instruction the CPU is working on right now, like a bookmark that tells the CPU which part of its instruction list to read next. 
 
 ALU (Arithmetic Logic Unit) – This is where the actual math and logic operations happen, like addition or subtraction.
 
