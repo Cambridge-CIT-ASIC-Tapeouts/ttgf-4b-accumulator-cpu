@@ -48,7 +48,7 @@ module tb ();
 
     initial begin
 
-    $monitor("Time=%0t | Input = %b | Sel = %b | Output = %b |  | Imm = %b", $time, ui_in, uio_in, uo_out, uut.imm);
+    $monitor("Time=%0t | Input = %b | Sel = %b | Output = %b ", $time, ui_in, uio_in, uo_out);
     
 	clk   = 0;
     rst_n = 0;
