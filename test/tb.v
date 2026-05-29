@@ -28,7 +28,7 @@ module tb ();
 `endif
 
   // Replace tt_um_example with your module name:
-  tt_um_example user_project (
+  tt_um_4b_tiny_cpu user_project (
 
       // Include power ports for the Gate Level test:
 `ifdef GL_TEST
@@ -46,4 +46,40 @@ module tb ();
       .rst_n  (rst_n)     // not reset
   );
 
+/*    initial begin
+
+    $monitor("Time=%0t | Input = %b | Sel = %b | Output = %b |  | Imm = %b", $time, ui_in, uio_in, uo_out, uut.imm);
+    
+	clk   = 0;
+    rst_n = 0;
+    ui_in = 8'h00;
+	uio_in = 8'h00;
+
+    #10 rst_n = 1;
+	#5;
+	
+	ui_in = 8'b00100001;
+	uio_in = 8'b00000000;
+	#10;
+
+	ui_in = 8'b00110001;
+	uio_in = 8'b00000000;
+	#10;
+
+    ui_in = 8'b01000010;
+    uio_in = 8'b00000000;
+    #10;
+
+    ui_in = 8'b01010010;
+    uio_in = 8'b00000000;
+    #10;
+
+	ui_in = 8'b00100001;
+	uio_in = 8'b00000001;
+	#300;
+        
+        $finish;
+    end
+*/
 endmodule
+   
