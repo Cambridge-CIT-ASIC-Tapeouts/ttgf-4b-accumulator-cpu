@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module ttgf-4b-accumulator-cpu (
+module tt_um_4b_accumulator_cpu (
     input  wire       clk,
     input  wire       rst_n,
     input wire        ena,
