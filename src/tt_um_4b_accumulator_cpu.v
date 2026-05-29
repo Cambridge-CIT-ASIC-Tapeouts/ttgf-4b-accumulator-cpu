@@ -48,5 +48,10 @@ module tt_um_4b_accumulator_cpu (
 		end
 	end
     //  Output ACC and PC
+	assign uio_oe  = 8'b11110000; // Enable outputs for upper 4 bits if needed, or adjust
+    assign uio_out = {4'b0000, imm}; // Assign imm to the lower 4 bits of uio_out
+
+    // Output ACC and PC
     assign uo_out = {uio_in[3:0], alu_out};
+
 endmodule
