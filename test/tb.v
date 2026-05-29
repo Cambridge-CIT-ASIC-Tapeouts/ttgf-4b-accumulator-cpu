@@ -70,8 +70,8 @@ module tb ();
 	ui_in = 8'b00100001;
 	uio_in = 8'b00000001;
 	#300;
-        
-        $finish;
+    
+    $finish;
     end
 endmodule
    
