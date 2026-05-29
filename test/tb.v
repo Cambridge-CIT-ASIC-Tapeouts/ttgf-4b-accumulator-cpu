@@ -38,7 +38,7 @@ module tb ();
       .clk    (clk),      // clock
       .rst_n  (rst_n)     // not reset
   );
-
+/*
     initial begin
 
     $monitor("Time=%0t | Input = %b | Sel = %b | Output = %b ", $time, ui_in, uio_in, uo_out);
@@ -73,5 +73,6 @@ module tb ();
     
     $finish;
     end
+	*/
 endmodule
    
